@@ -25,3 +25,4 @@ int main()
 	meskipun terjadi kesalahan*/
 	return 0;
 }
+
