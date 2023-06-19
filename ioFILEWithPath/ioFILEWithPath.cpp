@@ -5,13 +5,17 @@ using namespace std;
 
 int main() {
 	string baris;
+	string namafile;
+
+	cout << "masukan nama file : ";
+	cin >> namafile;
 
 	//membuka file dalam mode menulis.
 	ofstream outfile;
-	//menunjuk ke sebuah nama file
-	outfile.open("contohfile.txt");
+	// menunjuk ke sebuah nama file
+	outfile.open(namafile + ".txt", ios::out);
 
-	cout << ">=menulis file, \'q\' untuk keluar" << endl;
+	cout << ">= menulis file, \'q\' untuk keluar" << endl;
 
 	//unlimited loop untuk menulis
 	while (true) {
